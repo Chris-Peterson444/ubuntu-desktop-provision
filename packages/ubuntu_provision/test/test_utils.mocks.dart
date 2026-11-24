@@ -3222,6 +3222,13 @@ class MockSvgFileLoader extends _i1.Mock implements _i9.SvgFileLoader {
       ) as _i8.File);
 
   @override
+  bool get provideSvgInIsolate => (super.noSuchMethod(
+        Invocation.getter(#provideSvgInIsolate),
+        returnValue: false,
+        returnValueForMissingStub: false,
+      ) as bool);
+
+  @override
   String provideSvg(dynamic message) => (super.noSuchMethod(
         Invocation.method(
           #provideSvg,
